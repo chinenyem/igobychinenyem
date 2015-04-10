@@ -1,0 +1,219 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome);
+/*icons*/
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif; }
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif; }
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif; }
+
+/*icons*/
+body input:focus, body textarea:focus {
+  border: none; }
+
+body a:hover {
+  text-decoration: none !important; }
+
+nav #navbardirect {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  margin-top: -2%;
+  margin-left: 53%; }
+  nav #navbardirect .navli {
+    display: inline;
+    font-size: 13px;
+    margin-left: 7%;
+    font: 100% 'Merriweather', serif; }
+    nav #navbardirect .navli a {
+      position: relative;
+      color: #000;
+      text-decoration: none; }
+    nav #navbardirect .navli a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #e24ecb;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    nav #navbardirect .navli a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+nav .elephant {
+  height: 75px;
+  margin-left: 12%;
+  margin-top: 7px;
+  margin-bottom: -26px; }
+
+#picture {
+  background-image: url("../image/headerimage1.jpg");
+  margin-top: 3.5%;
+  height: 692px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+#picture:hover {
+  filter: hue-rotate(286deg);
+  -webkit-filter: hue-rotate(286deg);
+  -moz-filter: hue-rotate(286deg);
+  -o-filter: hue-rotate(286deg);
+  -ms-filter: hue-rotate(286deg);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.secondfromtop {
+  margin-top: 3%; }
+  .secondfromtop .slabtext {
+    font: 100% 'Merriweather', serif;
+    font-size: 127px;
+    margin-left: 11%; }
+    .secondfromtop .slabtext .eye {
+      height: 178px;
+      width: 249px; }
+
+.square {
+  height: 198px;
+  width: 20%;
+  float: left;
+  margin-top: -14%;
+  margin-left: 42%;
+  opacity: 0.2; }
+
+#sectionicons {
+  position: absolute;
+  top: 20%;
+  right: 10px; }
+
+.sectionicons {
+  list-style-type: none; }
+  .sectionicons .icon {
+    font-size: 20px;
+    width: 18px;
+    background-color: rgba(226, 78, 203, 0.5);
+    padding-left: 40px;
+    margin-bottom: 5px; }
+    .sectionicons .icon a {
+      overflow: hidden;
+      margin-left: -34px; }
+      .sectionicons .icon a i {
+        margin-left: 77%;
+        color: black; }
+    .sectionicons .icon a i:hover {
+      text-decoration: none; }
+
+nav #navone {
+  position: fixed;
+  height: 69px; }
+
+#contactform {
+  background-image: url("../image/womantyping.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2%; }
+  #contactform .formwidth {
+    width: 64%;
+    margin-top: 7%;
+    margin-left: 12%; }
+    #contactform .formwidth h5, #contactform .formwidth p, #contactform .formwidth input, #contactform .formwidth textarea, #contactform .formwidth .btn {
+      font: 100% 'Merriweather', serif; }
+    #contactform .formwidth p {
+      font-style: italic; }
+    #contactform .formwidth input {
+      height: 51px; }
+    #contactform .formwidth input, #contactform .formwidth textarea {
+      background-color: transparent;
+      border-radius: 0px 0px 0px 0px;
+      border-style: solid;
+      border-width: 0px 0px 2px 0px;
+      border-color: white;
+      outline: 0;
+      font-size: 15px; }
+    #contactform .formwidth textarea:focus, #contactform .formwidth input:focus {
+      border: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -moz-transition: none;
+      -webkit-transition: none; }
+    #contactform .formwidth .btn {
+      border-radius: 0px 0px 0px 0px;
+      background-color: transparent;
+      border-color: white;
+      width: 79%; }
+    #contactform .formwidth .btn:hover {
+      background-color: rgba(192, 192, 192, 0.5); }
+    #contactform .formwidth .btn:focus, #contactform .formwidth .btn:active:focus, #contactform .formwidth .btn.active:focus, #contactform .formwidth .btn.focus, #contactform .formwidth .btn:active.focus, #contactform .formwidth .btn.active.focus {
+      outline: none; }
+
+footer {
+  font: 100% 'Merriweather', serif;
+  font-size: 15px;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  color: gray; }
+  footer ul {
+    list-style-type: none;
+    margin-left: 8%; }
+    footer ul li {
+      display: inline;
+      margin-right: 8%; }
+      footer ul li a {
+        position: relative;
+        color: grey;
+        text-decoration: none; }
+      footer ul li a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: #e24ecb;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+      footer ul li a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+
+@media only screen and (max-width: 568px) {
+  section .secondfromtop .slabtext {
+    font: 100% 'Merriweather', serif;
+    font-size: 47px;
+    margin-left: 14%;
+    /* font-weight: 600; */ }
+  section .secondfromtop .slabtext .eye {
+    height: 121px;
+    width: 168px; }
+  section ul .sectionicons .icon {
+    font-size: 21px;
+    width: 29px;
+    background-color: #C0C0C0;
+    padding-left: 39px;
+    margin-bottom: 5px; } }
