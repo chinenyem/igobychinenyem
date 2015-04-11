@@ -14,8 +14,13 @@
   font-family: 'FontAwesome', sans-serif; }
 
 /*icons*/
-body input:focus, body textarea:focus {
-  border: none; }
+body {
+  font: 100% 'Merriweather', serif;
+  color: black; }
+  body a {
+    font: 100% 'Merriweather', serif; }
+  body input:focus, body textarea:focus {
+    border: none; }
 
 body a:hover {
   text-decoration: none !important; }
@@ -217,3 +222,22 @@ footer {
     background-color: #C0C0C0;
     padding-left: 39px;
     margin-bottom: 5px; } }
+
+#tumblr {
+  margin-left: 8%;
+  list-style-type: none; }
+  #tumblr #tumbimg {
+    width: 500px;
+    height: 500px; }
+
+section #blog {
+  margin-left: 6%; }
+
+#titlethree {
+  width: 508px; }
+
+.left {
+  margin-left: -4%; }
+
+.blogone, .blogtwo, .blogthree {
+  width: 601px; }

@@ -21,7 +21,13 @@ $font-stack-one: 'Merriweather', serif;
 /*icons*/ 
 
 body {
-	input:focus, textarea:focus,  { border: none; }
+	font: 100% $font-stack-one;
+	color: black;
+	a{
+		font: 100% $font-stack-one;
+	}
+	input:focus, textarea:focus,  { border: none; 
+	}
   }
 
 
@@ -334,10 +340,38 @@ footer{
  }
 
 
+  #tumblr{
+  	margin-left: 8%;
+  	list-style-type: none;
+
+  	#tumbimg{
+  		width: 500px;
+  		height: 500px;
+		
+
+  	}
+  }
+
+  section #blog{
+  	margin-left: 6%;
+
+  }
 
 
 
+  #titlethree{
+  	width: 508px;
+  }
 
+
+.left{
+	margin-left: -4%;
+}
+
+
+.blogone, .blogtwo, .blogthree{
+	width: 601px;
+}
 
 
 

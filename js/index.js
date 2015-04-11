@@ -250,23 +250,59 @@ $(function() {
    /*-----------------------------------------------------------------------------------*/
 	/*	 Tumblr
 	/*-----------------------------------------------------------------------------------*/
-    
-   function loadPosts () {
+      
+    //do a get request with simple ajax call
+        $.ajax({
+            url: "http://api.tumblr.com/v2/blog/modeststreetfashion.com/posts?api_key=sgrUpoEPI0N23EodfI92rWbVgAcWNxEoU00rZJ5zdCZRNCHDrR",
+            dataType: 'jsonp',
+            success: function(posts){
+             //The first thing we want is the posts object that is inside the response object, which we’ll assign to a variable
+             var postings = posts.response.posts;
+             //create an empty string variable that we can populate later
+             var text ='';
+             //we need a loop to iterate through the objects inside our postings variable’s data:
+             for (var i in postings) {
+              var p = postings[i];
+                   text += '<li><img class="lazy" id="tumbimg" src=' + p.photos[0].original_size.url +'>' +'</a></li> '+ '<br>'
+                 }
 
-		  var key = "api_key=sgrUpoEPI0N23EodfI92rWbVgAcWNxEoU00rZJ5zdCZRNCHDrR"
-		  var api = "https://api.tumblr.com/v2/blog/only-text-posts.tumblr.com/"
-		  var post_amount
+               //append the text to an unordered list for display purposes:
+               $('#tumblr').append(text);
 
-		  $.getJSON(api + "info?" + key,function(data) {
-		    console.log(data);
+               
 
-		    })
-		  }
+            }
 
 
+        });
+        
 
 
-
+        /*-----------------------------------------------------------------------------------*/
+  /*   Twitter
+  /*-----------------------------------------------------------------------------------*/
+        
+     //var screen_name = document.getElementsByName("screen_name")[0].value;
+$.getJSON("https://api.twitter.com/1/statuses/user_timeline.json?screen_name=VADmoda&count=10&callback=?",
+  function(data) {
+    $("#twitter").html("");
+    $.each(data, function(i,item){
+      $("<p />").html(item.text).appendTo("#twitter");
+      if ( i == 10 ) return false;
     });
+  });
+
+
+
+
+
+
+
+
+       });
+      
+
+    
+  
 
 	
